@@ -1,0 +1,19 @@
+package com.actitime.genericLib;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class WebdriverCommonLib extends BaseTest{
+
+	public String getTitle()
+	{
+		String title = driver.getTitle();
+		return title;
+	}
+	
+	public void waitForPageLoad(String title)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.titleContains(title));
+	}
+}

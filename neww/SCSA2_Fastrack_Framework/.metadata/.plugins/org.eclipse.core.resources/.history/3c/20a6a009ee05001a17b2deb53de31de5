@@ -1,0 +1,33 @@
+package com.actitime.loginLib;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import com.actitime.genericLib.BaseTest;
+import com.actitime.genericLib.FileLib;
+import com.actitime.genericLib.WebdriverCommonLib;
+import com.actitime.pages.ActiLoginPage;
+
+public class VerifyActiLogin1 extends BaseTest{
+FileLib flib;
+WebdriverCommonLib wlib;
+	@Test
+	public void verifyActiValidLoginTest() throws Throwable  {
+	
+		flib=new FileLib();
+		wlib=new WebdriverCommonLib();
+		
+		String username = flib.getKeyPropValue(PROPERTY_PATH, "username");
+		String password = flib.getKeyPropValue(PROPERTY_PATH, "password");
+		ActiLoginPage alp=new ActiLoginPage(driver);
+		alp.login(username, password);
+		String expectedHomeTitle = flib.getCellData(EXCEL_PATH, "Invalid", 1, 5);
+		wlib.verifyAssert(wlib.getPageTitle(), expectedHomeTitle, "Home Page");
+	}
+	
+	@Test
+	public void verifyActiInvalidLoginTest()  {
+	
+		Reporter.log("Home Page is Displayed==> PASSED",true);
+	}
+}

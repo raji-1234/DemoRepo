@@ -1,0 +1,19 @@
+package com.actitime.loginLib;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class VerifyActiLogin1 {
+
+	@Test
+	public void verifyActiValidLoginTest()  {
+	
+		Reporter.log("Home Page is Displayed==> PASSED",true);
+	}
+	
+	@Test
+	public void verifyActiInvalidLoginTest()  {
+	
+		Reporter.log("Home Page is Displayed==> PASSED",true);
+	}
+}

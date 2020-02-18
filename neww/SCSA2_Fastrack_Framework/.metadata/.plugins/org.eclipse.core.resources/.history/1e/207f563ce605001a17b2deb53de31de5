@@ -1,0 +1,16 @@
+package com.actitime.loginLib;
+
+public class VerifyActiLogin {
+
+	public void verifyActiValidLoginTest()
+	{
+		
+	}
+	
+	
+	
+	public void verifyActiInvalidLoginTest()
+	{
+		
+	}
+}

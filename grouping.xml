@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <groups>
+  <define name="AllTests">
+  <include name="SmokeTest"></include>
+    <include name="IntegrationTest"></include>
+    <include name="FunctionalTest"></include>
+      <include name="RegressionTest"></include>
+        </define>
+      <run>
+        <include name="AllTests"></include>
+        <exclude name="RegressionTest"></exclude>
+      </run>
+
+  </groups>
+    <classes>
+      <class name="testng.Grouping"/>
+    </classes>
+  </test> 
+</suite> 

@@ -1,0 +1,10 @@
+package com.actitime.genericLib;
+
+public class WebdriverCommonLib extends BaseTest{
+
+	public String getTitle()
+	{
+		String title = driver.getTitle();
+		return title;
+	}
+}

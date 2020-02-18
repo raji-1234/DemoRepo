@@ -1,0 +1,63 @@
+package com.actitime.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class ActiLoginPage {
+
+	
+	@FindBy(id="username") private WebElement untb;
+	public WebElement getUntb(){
+		return untb;
+	}
+	
+	public void setUntb(String un)
+	{
+		untb.sendKeys(un);
+	}
+	
+	
+	@FindBy(name="pwd") private WebElement pwtb;
+	public WebElement getPwtb() {
+		return pwtb;
+	}
+
+	public void setPwtb(String pwd) {
+		pwtb.sendKeys(pwd);
+	}
+	
+	@FindBy(xpath="//div[.='Login ']") private WebElement loginBtn;
+	@FindBy(xpath="(//span[@class='errormsg'])[1]") private WebElement errMsg;
+	public WebElement getPwtb() {
+		return pwtb;
+	}
+
+	public void setPwtb(WebElement pwtb) {
+		this.pwtb = pwtb;
+	}
+
+	public WebElement getLoginBtn() {
+		return loginBtn;
+	}
+
+	public void setLoginBtn(WebElement loginBtn) {
+		this.loginBtn = loginBtn;
+	}
+
+	public WebElement getErrMsg() {
+		return errMsg;
+	}
+
+	public void setErrMsg(WebElement errMsg) {
+		this.errMsg = errMsg;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,29 @@
+package com.actitime.loginLib;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import com.actitime.genericLib.BaseTest;
+import com.actitime.pages.EnterTimeTrackPage;
+
+public class VerifyActiLogin extends BaseTest{
+
+	EnterTimeTrackPage ettp;
+	@Test
+	public void verifyActiValidLoginTest()
+	{
+	
+		Reporter.log("Home Page is Displayed==> PASSED",true);
+		
+	}
+	
+	
+	@Test
+	public void verifyActiInvalidLoginTest()
+	{
+		 ettp=new EnterTimeTrackPage(driver);
+		 ettp.clicklogoutLink();
+		 
+		 
+	}
+}

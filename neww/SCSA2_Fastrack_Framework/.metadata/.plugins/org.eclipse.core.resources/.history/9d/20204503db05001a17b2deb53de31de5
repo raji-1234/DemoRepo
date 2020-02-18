@@ -1,0 +1,11 @@
+package com.actitime.genericLib;
+
+import java.io.FileInputStream;
+
+public class FileLib {
+
+	public void getKeyPropValue(String propPath)
+	{
+		FileInputStream fis=new FileInputStream(propPath)
+	}
+}

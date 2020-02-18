@@ -1,0 +1,38 @@
+package com.actitime.loginLib;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import com.actitime.genericLib.BaseTest;
+import com.actitime.genericLib.FileLib;
+import com.actitime.pages.ActiLoginPage;
+import com.actitime.pages.EnterTimeTrackPage;
+
+public class VerifyActiLogin extends BaseTest{
+
+	EnterTimeTrackPage ettp;
+	ActiLoginPage alp;
+	FileLib flib;
+	
+	@Test
+	public void verifyActiValidLoginTest()
+	{
+	
+		Reporter.log("Home Page is Displayed==> PASSED",true);
+		
+	}
+	
+	
+	@Test
+	public void verifyActiInvalidLoginTest()
+	{
+		flib=new FileLib();
+		 ettp=new EnterTimeTrackPage(driver);
+		 ettp.clicklogoutLink();
+		 
+		 
+		 alp=new ActiLoginPage(driver);
+		 alp.login(flib.getCellData(EXCEL_PATH, "Invalid", i, 0), flib.getCellData(EXCEL_PATH, "Invalid", i, 1));
+		 
+	}
+}

@@ -1,0 +1,20 @@
+package com.actitime.genericLib;
+
+public class BaseTest implements IAutoConsts{
+
+	
+	
+	public void openBrowser(String browser)
+	{
+		if(browser.equalsIgnoreCase("chrome"))
+		{
+			System.setProperty(CHROME_KEY, CHROME_VALUE);
+		}
+	}
+	
+	
+	public void tearDown()
+	{
+		
+	}
+}

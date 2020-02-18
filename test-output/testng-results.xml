@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[I am Reporter SMS]]>
+    </line>
+    <line>
+      <![CDATA[I am Both Report and SMS]]>
+    </line>
+    <line>
+      <![CDATA[i am run() of Remo class]]>
+    </line>
+    <line>
+      <![CDATA[i am gun() of Sumo class]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="65" started-at="2020-02-07T10:17:01Z" finished-at="2020-02-07T10:17:01Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="65" started-at="2020-02-07T10:17:01Z" finished-at="2020-02-07T10:17:01Z">
+      <class name="testng.Sumo">
+        <test-method status="PASS" signature="gun()[pri:0, instance:testng.Sumo@7823a2f9]" name="gun" duration-ms="2" started-at="2020-02-07T10:17:01Z" finished-at="2020-02-07T10:17:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[i am gun() of Sumo class]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- gun -->
+      </class> <!-- testng.Sumo -->
+      <class name="testng.remo">
+        <test-method status="PASS" signature="run()[pri:0, instance:testng.remo@1b604f19]" name="run" duration-ms="1" started-at="2020-02-07T10:17:01Z" finished-at="2020-02-07T10:17:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[i am run() of Remo class]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- testng.remo -->
+      <class name="testng.Demo">
+        <test-method status="PASS" signature="rum()[pri:0, instance:testng.Demo@1593948d]" name="rum" duration-ms="25" started-at="2020-02-07T10:17:01Z" finished-at="2020-02-07T10:17:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[I am Reporter SMS]]>
+            </line>
+            <line>
+              <![CDATA[I am Both Report and SMS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- rum -->
+      </class> <!-- testng.Demo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

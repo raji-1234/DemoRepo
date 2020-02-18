@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ActiTIME/data/commonData.property&apos; to &apos;Config.property&apos;" description="Rename resource &apos;commonData.property&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="data/commonData.property" name="Config.property" stamp="1573624105690" updateReferences="true"/>
+</session>
